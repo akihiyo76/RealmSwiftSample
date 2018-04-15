@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputAccessoryView" customModule="AssetFolio" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="PV3-Dq-zfp" id="1Py-iP-SXc"/>
+                <outlet property="confirmButton" destination="Gfl-Lu-Sag" id="R9h-dz-5Fg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3k-B9-hVG" userLabel="Border">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="IV3-De-786"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfl-Lu-Sag">
+                    <rect key="frame" x="305" y="0.0" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="3fA-Cn-Xq7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Confirm"/>
+                    <connections>
+                        <action selector="onConfirmButtonTapped:" destination="-1" eventType="touchUpInside" id="ubT-4h-KQf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PV3-Dq-zfp">
+                    <rect key="frame" x="10" y="0.0" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="6Oo-Pq-GvB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onCancelButtonTapped:" destination="-1" eventType="touchUpInside" id="yE9-xK-reC"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLS-y5-4Kf" userLabel="Border">
+                    <rect key="frame" x="0.0" y="39" width="375" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="CLC-9R-BQw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w3k-B9-hVG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7SK-0K-oY6"/>
+                <constraint firstAttribute="trailing" secondItem="w3k-B9-hVG" secondAttribute="trailing" id="ASq-vk-ItR"/>
+                <constraint firstItem="w3k-B9-hVG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FuM-c1-t79"/>
+                <constraint firstAttribute="bottom" secondItem="mLS-y5-4Kf" secondAttribute="bottom" id="Nnp-sx-7s5"/>
+                <constraint firstItem="PV3-Dq-zfp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="a4Q-9G-mro"/>
+                <constraint firstItem="mLS-y5-4Kf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gH3-T8-pvu"/>
+                <constraint firstItem="Gfl-Lu-Sag" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kV4-34-B17"/>
+                <constraint firstAttribute="trailing" secondItem="mLS-y5-4Kf" secondAttribute="trailing" id="mE1-ft-804"/>
+                <constraint firstItem="PV3-Dq-zfp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="nxe-bL-eQC"/>
+                <constraint firstItem="Gfl-Lu-Sag" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="oN7-u8-DST"/>
+                <constraint firstAttribute="bottom" secondItem="PV3-Dq-zfp" secondAttribute="bottom" id="uZj-yW-ScT"/>
+                <constraint firstAttribute="trailing" secondItem="Gfl-Lu-Sag" secondAttribute="trailing" constant="10" id="wBK-vr-ff7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-40" y="-45"/>
+        </view>
+    </objects>
+</document>

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  RealmSample
 //
-//  Created by Akihiko Sato on 2018/04/14.
+//  Created by akihiyo76 on 2018/04/14.
 //  Copyright © 2018年 akihiyo76. All rights reserved.
 //
 
